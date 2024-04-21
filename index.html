@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MascotaFiel - Tu aplicación para mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>MascotaFiel - Tu aplicación para mascotas</h1>
+
+    <button id="agregar-mascota-btn">Agregar Mascota</button>
+
+    <table id="mascotas-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cliente</th>
+                <th>Tipo</th>
+                <th>Veterinario</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se mostrarán las mascotas -->
+        </tbody>
+    </table>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Agregar/Editar Mascota</h2>
+            <form id="agregar-mascota-form" class="form">
+                <label for="nombre-mascota">Nombre de la Mascota:</label>
+                <input type="text" id="nombre-mascota" name="nombre-mascota" required>
+                
+                <label for="nombre-cliente">Nombre del Cliente:</label>
+                <input type="text" id="nombre-cliente" name="nombre-cliente" required>
+                
+                <label for="tipo-mascota">Tipo de Mascota:</label>
+                <input type="text" id="tipo-mascota" name="tipo-mascota" required>
+                
+                <label for="veterinario">Veterinario:</label>
+                <input type="text" id="veterinario" name="veterinario" required>
+                
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js"></script>
+</body>
+</html>
